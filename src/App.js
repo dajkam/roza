@@ -21,7 +21,7 @@ function App() {
         { icon: `Cennik`, text: "Item 4" },
         { icon: `Kontakt`, text: "Item 5" }
     ];
-   
+
 
 
     return (
@@ -37,6 +37,9 @@ function App() {
                 <Content styles={styles} />
                 <FooterMenu menuItems={menuItems} styles={styles} />
             </div>
+
+
+
 
   );
 }

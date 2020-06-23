@@ -4,6 +4,10 @@ body {
 
 }
 
+#ham{
+display: none;
+}
+
 
 .navbar {
     overflow: hidden;
@@ -68,6 +72,14 @@ body {
         display: block;
         text-align: left;
         background-color: black;
+    }
+
+    #ham{
+        display: block;
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+
     }
 
 }

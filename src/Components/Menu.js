@@ -1,9 +1,32 @@
 import React from "react";
 import '../CSS/menu.css';
+import burg from './menu.svg';
+import { StyleSheet } from 'react-native'
 
-function Menu() {
+class Menu extends React.Component{
+    
+    constructor(){
+        super();
+        this.myRef = React.createRef()
+        
+    }
 
-    return (<span className={"navbar responsive"}  >
+     open_close_menu() {
+        
+        const node = this.myRef.current;
+         let width = StyleSheet.flatten(node.props.style).display;
+
+    }
+
+
+    render() {
+
+        return (
+
+
+            <span>
+    <img src={burg}  id={"ham"} onClick={this.open_close_menu}/>
+        <span className={"navbar responsive"} ref={this.myRef} >
 
             <a  href="#">O NAS</a>
             <a  href="#">POKOJE</a>
@@ -13,9 +36,18 @@ function Menu() {
 
 
 
-    </span>);
+    </span>
+</span>
+
+        );
+    }
+
+    
 }
-export default Menu
+
+export default Menu;
+
+
 
 
 
